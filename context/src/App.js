@@ -8,7 +8,7 @@ import { type } from '@testing-library/user-event/dist/type';
 function App() {
   const [name,setName] = useState("")
   const [age,setAge] = useState("")
-  const data = useContext(UserContext)
+  const {data} = useContext(UserContext)
 
   function onSubmit () {
     if (name === '' || age === '') {
