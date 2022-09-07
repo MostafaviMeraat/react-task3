@@ -4,13 +4,13 @@ import UserContext from "./stroe/User"
 const Detail = () => {
   const [state,setState] = useState("1")
   try{
-    let {data, setData} = useContext(UserContext)
+    let data= useContext(UserContext)
     const name = data.map(e=>e.name).join('')
     const age = data.map(e=>e.age).join('')
 
     function del () {
       data=[]
-     setData('')
+     
     }
 
   return <>
